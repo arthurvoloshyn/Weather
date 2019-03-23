@@ -6,7 +6,7 @@ const Form = props => (
 			<form onSubmit={props.weatherWethod}>
 				<input type="text" name="city" placeholder="Endet the city..."/>
 				<br className="br-form"/>
-				<button>Get a weather</button>
+				<button>Get the weather</button>
 			</form>
 		</div>
 

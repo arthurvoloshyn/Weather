@@ -4,12 +4,8 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^4.2.1",
-    "prop-types": "^15.6.2",
     "react": "^16.7.0",
-    "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.7.0",
-    "react-preload": "^0.6.0",
-    "react-router": "^3.2.1",
     "react-scripts": "2.1.2",
     "react-spinners": "^0.5.1"
   },
@@ -27,5 +23,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "react-router-dom": "^5.0.0"
+  }
 }

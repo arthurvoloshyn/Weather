@@ -1,13 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body {
-  font-family: "Open Sans", serif;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-@keyframes sell { 
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+body {
+  font-family: "Open Sans", serif;
 }
 
 .wrapper {
@@ -23,8 +32,6 @@ body {
   background: -o-linear-gradient(45deg, rgba(45,176,224,1) 0%, rgba(96,40,168,1) 100%);
   background: -ms-linear-gradient(45deg, rgba(45,176,224,1) 0%, rgba(96,40,168,1) 100%);
   background: linear-gradient(45deg, rgba(45,176,224,1) 0%, rgba(96,40,168,1) 100%);
-  background-size: 400% 400%;
-  animation: sell 30s linear infinite;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2db0e0', endColorstr='#6028a8', GradientType=1 );
 }
 
@@ -58,6 +65,7 @@ body {
   border-top: 2px solid #113a65;
   border-bottom: 2px solid #113a65;
   border-right: 2px solid #113a65;
+  border-left: 2px solid #113a65;
 }
 
 input[type="text"] {
@@ -132,66 +140,6 @@ button:active {
   font-weight: bold;
 }
 
-.preloader {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  font-size: 64px;
-  color: #113a65;
-  font-style: italic;
-  text-shadow: 0.5px 0.866px 5px rgba(0,0,0,0.5);
-}
-
-#dot_1 {
-  animation: 1s lsDot_1 infinite;
-}
-
-#dot_2 {
-  animation: 1s lsDot_2 infinite;
-}
-
-#dot_3 {
-  animation: 1s lsDot_3 infinite;
-}
-
-@keyframes lsDot_1 {
-  0% {opacity: 1;}
-  50% {opacity: 0;}
-  100% {opacity: 0;}
-}
-
-@-webkit-keyframes lsDot_1 {
-  0% {opacity: 1;}
-  50% {opacity: 0;}
-  100% {opacity: 0;}
-}
-
-@keyframes lsDot_2 {
-  0% {opacity: 0;}
-  50% {opacity: 1;}
-  100% {opacity: 0;}
-}
-
-@-webkit-keyframes lsDot_2 {
-  0% {opacity: 0;}
-  50% {opacity: 1;}
-  100% {opacity: 0;}
-}
-
-@-webkit-keyframes lsDot_3 {
-  0% {opacity: 0;}
-  50% {opacity: 0;}
-  100% {opacity: 1;}
-}
-
-@keyframes lsDot_3 {
-  0% {opacity: 0;}
-  50% {opacity: 0;}
-  100% {opacity: 1;}
-}
-
 @media (max-width: 1178px) {
   .br-form {
     display: block;
@@ -209,11 +157,9 @@ button:active {
   input[type="text"] {
       margin-bottom: 15px;
   }
-}
 
-@media (max-width: 1050px) {
-  input[type="text"] {
-      width: 75%;
+  input[type="text"], button {
+    width: 100%;
   }
 }
 
@@ -224,10 +170,6 @@ button:active {
 }
 
 @media (max-width: 750px) {
-  input[type="text"] {
-    width: 90%;
-  }
-
   .form {
     padding-left: 20px;
   }
