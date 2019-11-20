@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Weather from './Weather';
+import Weather from './containers/Weather';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');

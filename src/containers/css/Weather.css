@@ -1,13 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body {
-  font-family: "Open Sans", serif;
-}
-
-@keyframes sell { 
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+  font-family: 'Open Sans', serif;
 }
 
 .wrapper {
@@ -23,8 +17,6 @@ body {
   background: -o-linear-gradient(45deg, rgba(45,176,224,1) 0%, rgba(96,40,168,1) 100%);
   background: -ms-linear-gradient(45deg, rgba(45,176,224,1) 0%, rgba(96,40,168,1) 100%);
   background: linear-gradient(45deg, rgba(45,176,224,1) 0%, rgba(96,40,168,1) 100%);
-  background-size: 400% 400%;
-  animation: sell 30s linear infinite;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2db0e0', endColorstr='#6028a8', GradientType=1 );
 }
 
@@ -36,9 +28,15 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: 575px) {
+  .main {
+    height: auto;
+  }
+}
+
 .info {
   height: 55vh;
-  background: url("img/polygon.jpg") center center no-repeat;
+  background: url('../../img/polygon.jpg') center center no-repeat;
   background-blend-mode: multiply;
   background-color: #484747;
   border: 2px solid #1f1f1f;
@@ -51,16 +49,30 @@ body {
   color: #000;
 }
 
+@media (max-width: 575px) {
+  .info {
+    height: 30vh;
+  }
+}
+
 .form {
   height: 55vh;
-  padding-top: 40px;
+  padding-top: 100px;
   padding-left: 50px;
   border-top: 2px solid #113a65;
   border-bottom: 2px solid #113a65;
   border-right: 2px solid #113a65;
 }
 
-input[type="text"] {
+@media (max-width: 575px) {
+  .form {
+    border-left: 2px solid #113a65;
+    padding-top: 30px;
+    height: auto;
+  }
+}
+
+input[type='text'] {
   background-color: transparent;
   border: 0;
   border-bottom: solid 2px #113a65;
@@ -72,6 +84,13 @@ input[type="text"] {
   margin-right: 20px;
   font-size: 20px;
   outline: none;
+}
+
+@media (max-width: 1121px) {
+  input[type='text'] {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 
 input::-webkit-input-placeholder {
@@ -94,8 +113,11 @@ button {
   outline: none!important;
 }
 
-.br-form {
-  display: none;
+@media (max-width: 1121px) {
+  button[type='submit'] {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 button:hover {
@@ -116,6 +138,12 @@ button:active {
   color: #fff;
 }
 
+@media (max-width: 1121px) {
+  .info h2 {
+    font-size: 2em;
+  }
+}
+
 .info p {
   color: #e4e4e4;
   font-weight: bold;
@@ -123,87 +151,23 @@ button:active {
 
 .infoWeath {
   width: 60%;
-  font-size: 16px;
+  font-size: 20px;
   color: #fff;
+}
+
+@media (max-width: 1121px) {
+  .infoWeath {
+    width: 100%;
+  }
+}
+
+@media (max-width: 402px) {
+  .infoWeath {
+    font-size: 14px;
+  }
 }
 
 .error {
   color: #041f3c;
   font-weight: bold;
-}
-
-.preloader {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  font-size: 64px;
-  color: #113a65;
-  font-style: italic;
-  text-shadow: 0.5px 0.866px 5px rgba(0,0,0,0.5);
-}
-
-@media (max-width: 1178px) {
-  .br-form {
-    display: block;
-  }
-
-  .infoWeath {
-      font-size: 12px;
-      padding-top: 15px;
-  }
-
-  .error {
-      padding-top: 30px;
-  }
-
-  input[type="text"] {
-      margin-bottom: 15px;
-  }
-}
-
-@media (max-width: 1050px) {
-  input[type="text"] {
-      width: 75%;
-  }
-}
-
-@media (max-width: 835px) {
-  .info h2 {
-    font-size: 2em;
-  }
-}
-
-@media (max-width: 750px) {
-  input[type="text"] {
-    width: 90%;
-  }
-
-  .form {
-    padding-left: 20px;
-  }
-}
-
-@media (max-width: 665px) {
-  .infoWeath {
-    font-size: 10px;
-  }
-
-}
-
-@media (max-width: 575px) {
-  .wrapper {
-    height:  170vh;
-  }
-}
-
-@media (max-width: 340px) {
-  .wrapper {
-    height:  190vh;
-  }
-
-  .infoWeath {
-    font-size: 9px;
-  }
 }

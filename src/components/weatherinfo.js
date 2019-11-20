@@ -1,20 +1,25 @@
-import React from "react";
+import React from 'react';
 
-const WeatherInfo = props => (
-
- 		<div className="infoWeath">
- 			{ props.city && 
-	 			<div>
-	 				<p>Area is {props.city}, {props.country}</p>
-	 				<p>Temperature is {props.temp >= 0 ? '+' + props.temp : props.temp}°C</p>
-	 				<p>Sunrise is {props.sunrise}</p>
-	 				<p>Sunset is {props.sunset}</p>
-	 				<p>Pressure is {props.pressure}mm</p>
-	 			</div>
- 			}
- 			<p className="error">{props.error}</p>
- 		</div>
-
+const WeatherInfo = ({ city, country, temp, sunset, sunrise, pressure, loading, error }) => (
+ 	<div className='infoWeath'>
+ 		{city &&
+	 		<div>
+ 				<p>Area is {city}, {country}</p>
+ 				<p>Temperature is {temp}</p>
+ 				<p>Sunset is {sunset}</p>
+        <p>Sunrise is {sunrise}</p>
+ 				<p>Pressure is {pressure}mm</p>
+ 			</div>
+ 		}
+    {loading &&
+      <div className='text-center'>
+        <div className='spinner-border' role='status'>
+          <span className='sr-only'>Loading...</span>
+        </div>
+      </div>
+    }
+ 		<p className='error'>{error}</p>
+ 	</div>
 );
 
 export default WeatherInfo;
