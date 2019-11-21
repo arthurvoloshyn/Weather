@@ -1,6 +1,6 @@
 {
   "homepage": "https://ArturW1998.github.io/Weather",
-  "name": "cities",
+  "name": "weather",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

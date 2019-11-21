@@ -84,6 +84,9 @@ input[type='text'] {
   margin-right: 20px;
   font-size: 20px;
   outline: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media (max-width: 1121px) {
