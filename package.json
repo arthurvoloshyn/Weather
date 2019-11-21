@@ -1,6 +1,6 @@
 {
   "homepage": "https://ArturW1998.github.io/Weather",
-  "name": "weather",
+  "name": "Weather",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
