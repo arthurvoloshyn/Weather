@@ -67,6 +67,7 @@ body {
 @media (max-width: 1244px) {
   .form {
     padding-left: 15px;
+    padding-top: 40px;
   }
 }
 
@@ -167,6 +168,12 @@ button:active {
 @media (max-width: 1244px) {
   .infoWeath {
     width: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  .infoWeath {
+    font-size: 15px;
   }
 }
 
