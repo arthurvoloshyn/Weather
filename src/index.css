@@ -17,7 +17,7 @@ code {
   opacity: 0.01;
 }
 
-.anim-appear.anim-appear-active{
+.anim-appear.anim-appear-active {
   opacity: 1;
   transition: opacity 1s ease-in;
 }
