@@ -13,13 +13,13 @@ export const timeConversion = sec => {
 
 export const tempConversion = temp => (temp > 0 ? `+${temp}°C` : `${temp}°C`);
 
-export class initialState {
+export class InitialState {
   temp = undefined;
   city = undefined;
   country = undefined;
   sunset = undefined;
-  sunrise =  undefined;
-  pressure =  undefined;
-  error =  undefined;
-  loading =  false;
-};
+  sunrise = undefined;
+  pressure = undefined;
+  error = undefined;
+  loading = false;
+}
