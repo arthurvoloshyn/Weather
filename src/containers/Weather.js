@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
-import { timeConversion, tempConversion, InitialState } from '../utils';
+import { timeConversion, tempConversion } from '../utils';
+
+import { InitialState } from '../services';
 
 import Constants from '../constants';
 
