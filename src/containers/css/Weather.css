@@ -23,8 +23,8 @@ body {
 .main {
   background: #2a6bb1;
   box-shadow: 0 2px 80px -20px rgba(0, 0, 0, 0.5);
-  height: 55vh;
   margin: 0 auto;
+  min-height: 65vh;
   width: 60%;
 }
 
@@ -44,8 +44,8 @@ body {
   border-right: 2px solid #131e29;
   color: #000;
   display: flex;
-  height: 55vh;
   justify-content: center;
+  min-height: 65vh;
   text-align: center;
 }
 
@@ -59,7 +59,7 @@ body {
   border-bottom: 2px solid #113a65;
   border-right: 2px solid #113a65;
   border-top: 2px solid #113a65;
-  height: 55vh;
+  min-height: 65vh;
   padding-left: 50px;
   padding-top: 100px;
 }
